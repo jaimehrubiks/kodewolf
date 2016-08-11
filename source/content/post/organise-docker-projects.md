@@ -11,13 +11,12 @@ share = true
 slug = "How to organize your docker project"
 tags = ["docker", "projects"]
 title = "How to organize your docker project"
-
 +++
 
 Hey you ! Today we are testing a new way to organize projects with docker !
 
 Why Docker for you project ?
------------------------------
+----------------------------
 
 But you first ask yourself **Why use Docker ? I know how to organize my projects of today !** and it's a great question to ask. 
 With the popularity of this little revolution, Docker has been used over and over everywhere, but it's not always a good practice 
@@ -36,8 +35,7 @@ So, have you a project with microservices ?
 
 **No**, I should read another article.
 
-Let's go !
-----------
+# Let's go !
 
 Let's see how to properly organize a project with Docker. I do not pretend I have the best solution, but my blog here is fully
 functionnal with docker, and there is a lot of other services I use on this server.
@@ -69,8 +67,7 @@ is to split services in microservices as tiny as possible. So step 2 : identify 
 
 And here we are ! You have exactly what containers you will need.
 
-The architecture
------------------
+# The architecture
 
 With this container organisation, it's almost easy to see how to combine them in networks, volumes, and to see how microservices
 will communicate together.
@@ -90,7 +87,7 @@ With this architecture, you always see how your containers are talking to each o
 If something is broken, all other services are up, and maintenance is easy without damages : you build another container for the 
 exact part where it fails, and you re-up it. Docker-compose for example updates only new containers with a simple
 
-	docker-compose up -d
+	$ docker-compose up -d
 
 Docker compose and folders
 --------------------------
@@ -128,11 +125,11 @@ Launch it !
 
 Docker has this incredible way to make things in production like in development, so the way is the same for both environments :
 
-	docker-compose up -d
+	$ docker-compose up -d
 
 In order to launch services, like global nginx, services nginx, pydio ... and :
 
-	docker-compose -f docker-compose.admin.yml run hugo
+	$ docker-compose -f docker-compose.admin.yml run hugo
 
 To for example generate the blog html according to the markdown. After this, you're done !
 
@@ -140,7 +137,7 @@ Conclusion
 ----------
 
 Docker is not for everything, so be careful to use it wisely for a project that needs it. But if you think it's a good way to go, don't 
-hesitate and start making Dockerfiles and docker-compose.yml to improve all sides of you're project !
+hesitate and start making Dockerfiles and `docker-compose.yml` to improve all sides of you're project !
 
 My way to do things is not meant to everybody too, if you don't like it don't force yourself to use it, it's more a example of **how you
 can do things properly with the Docker mess**.
