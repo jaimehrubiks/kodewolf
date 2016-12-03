@@ -6,7 +6,7 @@ draft = false
 shares = false
 metas = false
 
-title = "@fuego"
+title = "About"
 description = "My biography !"
 
 +++
