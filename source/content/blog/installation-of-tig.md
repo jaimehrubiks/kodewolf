@@ -2,13 +2,9 @@
 author = "Alexis Tacnet"
 comments = true
 date = "2016-10-15T23:19:32Z"
-description = "My experience with the deployement of Telegraf, InfluxDB and Grafana on Docker"
 draft = false
 featured = false
-image = "images/grafana.png"
-menu = ""
 share = true
-slug = "Telegraf, InfluxDB and Grafana experience with Docker"
 tags = ["docker", "telegraf", "influxdb", "grafana"]
 title = "Telegraf, InfluxDB and Grafana experience with Docker"
 +++

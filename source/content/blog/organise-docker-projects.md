@@ -2,13 +2,9 @@
 author = "Alexis Tacnet"
 comments = true
 date = "2016-07-31T17:37:32Z"
-description = "I like when my projects are well organized, but with Docker it's not so easy"
 draft = false
 featured = false
-image = "images/docker.jpg"
-menu = ""
 share = true
-slug = "How to organize your docker project"
 tags = ["docker", "projects"]
 title = "How to organize your docker project"
 +++
