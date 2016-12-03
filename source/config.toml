@@ -1,33 +1,38 @@
 baseurl = "https://codewolf.fr/"
-
+theme = "cocoa-hugo-theme"
+builddrafts = true
+canonifyurls = true
+contentdir = "content"
 languageCode = "en-US"
+layoutdir = "layouts"
+publishdir = "public"
+author = "Alexis Tacnet"
 title = "Codewolf"
-summerization = "html_firstparagraph"
-paginate = 5
-theme = "bleak"
+pygmentsuseclasses = true
+disqusshortname = "codewolf" # Comment out to disable Disqus.
+pluralizelisttitles = false
 
 [permalinks]
-  post = "/post/:year/:month/:day/:slug"
-  project = "/project/:year/:month/:day/:slug"
-
-[indexes]
-  tag = "tags"
-  topic = "topics"
+fixed = ":title/"
+blog = "blog/:slug/"
 
 [params]
-  Subtitle = "Some blog about coding, cool stuff and machine learning."
-  description = "Cool stuff and machine learning"
-  cover = "/images/cover.png"
-  logo = "/images/logo.png"
-  disqus = "codewolf"
+author = "Alexis Tacnet"
+# gravatar = "" # do not use in the same time as Avatar
+# avatar = "" # path to image in static dir e.g img/avatar.png (do not use in the same time as Gravatar)
+cachebuster = true
+dateform = "Jan 2, 2006"
+dateformfull = "Mon Jan 2 2006 15:04:05 MST"
+description = "I'm a man who loves to do code ! I'm very interested in Machine Learning and I would like to share my experiences about this exciting subject."
+email = "alexistacnet@gmail.com"
+faviconfile = "img/favicon.ico"
+gatracker = "XYZ"
+github = "https://github.com/fuegowolf"
+highlightjs = true
+# highlightjslanguages = ["go"] # additional languages not included in the "common" set
+initials = "ad" # Displayed on single post page; DEPRECATED in v0.3.0.
+lang = "en"
+linkedin = "//linkedin.com/in/you"
+twitter = "//twitter.com/you"
 
-[author]
-  FirstName = "Alexis"
-  LastName = "Tacnet"
-  Gender = "male"
-  UserName = "fuego"
-  Image = ""
-  Bio = "I'm a man who loves to do code ! I'm very interested in Machine Learning and I would like to share my experiences about this exciting subject."
-  Website = "http://codewolf.fr"
-  Github = "https://github.com/fuegowolf"
-  Page = "author"
+extracssfiles = [ "/css/override.css" ] # In your `static/css`, add/remove files as necessary.
