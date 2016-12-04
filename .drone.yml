@@ -1,0 +1,38 @@
+clone:
+  recursive: true
+  submodule_override:
+    source/themes/cocoa-hugo-theme: https://github.com/fuegowolf/cocoa-hugo-theme.git
+
+build:
+  image: ubuntu:latest
+  commands:
+    - apt-get update && apt-get install -y hugo
+    - hugo --source="source" --buildDrafts
+    - ls
+
+publish:
+  docker:
+    registry: creus.codewolf.fr:5000
+    username: fuego
+    password: $$PASSWORD
+    email: alexistacnet@gmail.com
+    repo: codewolf/codewolf
+    tag: $$BRANCH
+    file: Dockerfile
+    insecure: false
+
+deploy:
+  sftp:
+    host: codewolf.fr
+    username: fuego
+    password: $$PASSWORD
+    destination_path: /home/fuego/Projets/codewolf/
+    files:
+      - docker-compose.cronos.yml
+  ssh:
+    host: codewolf.fr
+    user: fuego
+    commands:
+      - cd ~/Projets/codewolf
+      - docker pull creus.codewolf.fr:5000/codewolf:$$BRANCH
+      - docker-compose -f docker-compose.cronos.yml up -d

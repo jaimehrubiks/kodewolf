@@ -1,0 +1,12 @@
+version: '2'
+ 
+services:
+  codewolf:
+    image: creus.codewolf.fr:5000/codewolf/codewolf:master
+    networks:
+      - cronos
+
+networks:
+  cronos:
+    external: 
+      name: codewolf_cronos
