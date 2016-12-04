@@ -8,7 +8,6 @@ build:
   commands:
     - apt-get update && apt-get install -y hugo
     - hugo --source="source" --buildDrafts
-    - ls
 
 publish:
   docker:
@@ -34,5 +33,5 @@ deploy:
     user: fuego
     commands:
       - cd ~/Projets/codewolf
-      - docker pull creus.codewolf.fr:5000/codewolf:$$BRANCH
+      - docker pull creus.codewolf.fr:5000/codewolf/codewolf:$$BRANCH
       - docker-compose -f docker-compose.cronos.yml up -d
