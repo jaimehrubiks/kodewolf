@@ -40,5 +40,4 @@ deploy:
       - cp cronos.conf ~/Projets/frostfire/cronos/projects/codewolf.conf
       - cp cronos-special.conf ~/Projets/frostfire/global-nginx/specials/codewolf.conf
       - cd ~/Projets/frostfire
-      - docker-compose restart cronos-nginx
-      - docker-compose restart global-nginx
+      - docker-compose up -d --build
