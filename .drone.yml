@@ -27,6 +27,8 @@ deploy:
     password: $$PASSWORD
     destination_path: /home/fuego/Projets/codewolf/
     files:
+      - cronos.conf
+      - cronos-special.conf
       - docker-compose.cronos.yml
   ssh:
     host: codewolf.fr
@@ -35,3 +37,7 @@ deploy:
       - cd ~/Projets/codewolf
       - docker pull creus.codewolf.fr:5000/codewolf/codewolf:$$BRANCH
       - docker-compose -f docker-compose.cronos.yml up -d
+      - cp cronos.conf ~/Projets/frostfire/cronos/projects/codewolf.conf
+      - cp cronos-special.conf ~/Projets/frostfire/cronos/specials/codewolf.conf
+      - cd ~/Projets/frostfire
+      - docker-compose restart cronos-nginx

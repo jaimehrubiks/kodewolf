@@ -9,4 +9,4 @@ services:
 networks:
   cronos:
     external: 
-      name: codewolf_cronos
+      name: frostfire_cronos
