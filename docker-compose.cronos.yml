@@ -5,6 +5,7 @@ services:
     image: creus.codewolf.fr:5000/codewolf/codewolf:master
     networks:
       - cronos
+    restart: always
 
 networks:
   cronos:
