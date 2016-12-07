@@ -11,8 +11,7 @@ title = "How to organize your docker project"
 
 Hey you ! Today we are testing a new way to organize projects with docker !
 
-Why Docker for you project ?
-----------------------------
+# Why Docker for your project ?
 
 But you first ask yourself **Why use Docker ? I know how to organize my projects of today !** and it's a great question to ask. 
 With the popularity of this little revolution, Docker has been used over and over everywhere, but it's not always a good practice 
@@ -48,18 +47,10 @@ Pfiou that's a lot, and a way to do it with Docker is to compact each service in
 run multiple process in the same container. But I don't like this method, I think it's breaking the Docker philosophy, the goal
 is to split services in microservices as tiny as possible. So step 2 : identify microservices.
 
-* A **blog**
-	* Nginx
-	* Hugo, a static HTML blog generator
+* A **blog** : Nginx, Hugo (a static HTML blog generator)
 * A **Pydio** instance to access your files
-	* Pydio
-* A random **nginx** website
-	* Nginx
-	* Php-fpm if php is needed
-	* Mysql if a db is needed too
-* **HTTPS**
-	* A global nginx (that redirects subdomains for example to each services)
-	* Let's encrypt
+* A random **nginx** website : Nginx, Php-fpm (if php is needed), MySQL (if a db is needed too)
+* **HTTPS** : A global Nginx (that redirects subdomains for example to each services), Let's Encrypt
 
 And here we are ! You have exactly what containers you will need.
 
