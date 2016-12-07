@@ -115,4 +115,4 @@ Then in the Dashboards all is possible : create rows, graphs, text, ... The only
 
 We've seen that it's very simple to install those tools with Docker, and to gave them a try on a laptop for example. Grafana is really useful to monitor CPU usage, the number of virtual machines running, the amount of memory which is free ... and I couldn't do with it anymore !
 
-If you need more inspiration, or you want to see how I use this on this server, you can go to my [codewolf project's github](https://github.com/fuegowolf/codewolf) :) Bye !
+If you need more inspiration, or you want to see how I use this on this server, you can go to my [frostfire project's github](https://github.com/fuegowolf/frostfire) :) Bye !

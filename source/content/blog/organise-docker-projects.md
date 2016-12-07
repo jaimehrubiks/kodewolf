@@ -129,4 +129,4 @@ hesitate and start making Dockerfiles and `docker-compose.yml` to improve all si
 My way to do things is not meant to everybody too, if you don't like it don't force yourself to use it, it's more a example of **how you
 can do things properly with the Docker mess**.
 
-If you need more inspiration, or you want to see how I use this on this server, you can go to my [codewolf project's github](https://github.com/fuegowolf/codewolf) :) Bye !
+If you need more inspiration, or you want to see how I use this on this server, you can go to my [frostfire project's github](https://github.com/fuegowolf/frostfire) :) Bye !
