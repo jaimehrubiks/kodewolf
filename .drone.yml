@@ -42,3 +42,8 @@ deploy:
       - cd ~/Projets/frostfire
       - docker-compose -f docker-compose.admin.yaml run --rm letsencrypt generate.sh codewolf.fr
       - docker-compose up -d --build
+
+notify:
+  webhook:
+    urls:
+      - https://cronos.codewolf.fr/amiral/send_message
