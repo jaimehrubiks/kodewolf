@@ -19,6 +19,8 @@ publish:
     tag: $$BRANCH
     file: Dockerfile
     insecure: false
+    when:
+      branch: [master, develop]
 
 deploy:
   sftp:
@@ -30,6 +32,8 @@ deploy:
       - cronos.conf
       - cronos-special.conf
       - docker-compose.cronos.yml
+    when:
+      branch: [master, develop]
   ssh:
     host: codewolf.fr
     user: fuego
@@ -42,6 +46,8 @@ deploy:
       - cd ~/Projets/frostfire
       - docker-compose -f docker-compose.admin.yaml run --rm letsencrypt generate.sh codewolf.fr
       - docker-compose up -d --build
+    when:
+      branch: [master, develop]
 
 notify:
   webhook:
