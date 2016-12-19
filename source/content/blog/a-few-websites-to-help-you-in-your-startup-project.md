@@ -29,4 +29,4 @@ As they say in the front page, StartUp League is a Radix initiative and aims at 
 
 This last one is a little bit different. This kind of blog is a collection about *digital nomads* : people who like to travel a lot and code too. This is really interesting, especially the *Gear* section where a complete guide with Amazon links can be found, it was very useful to me for finding my presents.
 
-Hope you find that small list useful, if you do know a good blog about startups and gear that can improve your life don't hesitate to tell me, on [twitter](https://twitter.com/Cruator) for example. See ya !
+Hope you find that small list useful, if you do know a good blog about startups and gear that can improve your life don't hesitate to tell me, on [twitter](https://twitter.com/fuegowol) for example. See ya !

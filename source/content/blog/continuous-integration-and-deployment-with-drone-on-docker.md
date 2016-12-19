@@ -126,6 +126,6 @@ So to sum up, I sftp some files, like the docker-compose one, and a nginx config
 
 # Conclusion
 
-Here we go ! A full Continuous Integration and Deployment stack ready to be used by tons of projects ! Don't hesitate to do this kind of things on your server or computer, it was very pleasant to do so. Feel free to ask me any questions :) If you want to see more of my server stack, I recommend you to read the [How to organize your docker project](https://codewolf.fr/blog/how-to-organize-your-docker-project/) article.
+Here we go ! A full Continuous Integration and Deployment stack ready to be used by tons of projects ! Don't hesitate to do this kind of things on your server or computer, it was very pleasant to do so. Feel free to ask me any questions :) If you want to see more of my server stack, I recommend you to read the [How to organize your docker project](https://kodewolf.com/blog/how-to-organize-your-docker-project/) article.
 
 See ya !
