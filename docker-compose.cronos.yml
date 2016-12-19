@@ -2,7 +2,7 @@ version: '2'
  
 services:
   kodewolf:
-    image: creus.codewolf.fr:5000/kodewolf/kodewolf:master
+    image: creus.fuegowolf.me:5000/kodewolf/kodewolf:master
     networks:
       - cronos
     restart: always

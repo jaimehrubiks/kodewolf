@@ -11,7 +11,7 @@ build:
 
 publish:
   docker:
-    registry: creus.codewolf.fr:5000
+    registry: creus.fuegowolf.me:5000
     username: fuego
     password: $$PASSWORD
     email: alexistacnet@gmail.com
@@ -24,7 +24,7 @@ publish:
 
 deploy:
   sftp:
-    host: codewolf.fr
+    host: fuegowolf.me
     username: fuego
     password: $$PASSWORD
     destination_path: /home/fuego/Projets/kodewolf/
@@ -35,11 +35,11 @@ deploy:
     when:
       branch: [master, develop]
   ssh:
-    host: codewolf.fr
+    host: fuegowolf.me
     user: fuego
     commands:
       - cd ~/Projets/kodewolf
-      - docker pull creus.codewolf.fr:5000/kodewolf/kodewolf:$$BRANCH
+      - docker pull creus.fuegowolf.me:5000/kodewolf/kodewolf:$$BRANCH
       - docker-compose -f docker-compose.cronos.yml up -d
       - cp cronos.conf ~/Projets/frostfire/cronos/projects/kodewolf.conf
       - cp cronos-special.conf ~/Projets/frostfire/global-nginx/specials/kodewolf.conf
@@ -52,4 +52,4 @@ deploy:
 notify:
   webhook:
     urls:
-      - https://cronos.codewolf.fr/amiral/send_message
+      - https://cronos.fuegowolf.me/amiral/send_message
