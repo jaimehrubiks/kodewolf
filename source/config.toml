@@ -1,4 +1,4 @@
-baseurl = "https://codewolf.fr/"
+baseurl = "https://kodewolf.com/"
 theme = "cocoa-hugo-theme"
 builddrafts = true
 canonifyurls = true
@@ -7,9 +7,9 @@ languageCode = "en-US"
 layoutdir = "layouts"
 publishdir = "public"
 author = "Alexis Tacnet"
-title = "Codewolf"
+title = "Kodewolf"
 pygmentsuseclasses = true
-disqusshortname = "codewolf"
+disqusshortname = "kodewolf"
 pluralizelisttitles = false
 
 [permalinks]
@@ -28,4 +28,4 @@ lang = "en"
 github = "https://github.com/fuegowolf"
 email = "alexistacnet@gmail.com"
 linkedin = "https://www.linkedin.com/in/alexis-tacnet-aa0478109?trk=hp-identity-name"
-twitter = "https://twitter.com/Cruator"
+twitter = "https://twitter.com/fuegowolf"

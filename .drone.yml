@@ -15,7 +15,7 @@ publish:
     username: fuego
     password: $$PASSWORD
     email: alexistacnet@gmail.com
-    repo: codewolf/codewolf
+    repo: kodewolf/kodewolf
     tag: $$BRANCH
     file: Dockerfile
     insecure: false
@@ -27,7 +27,7 @@ deploy:
     host: codewolf.fr
     username: fuego
     password: $$PASSWORD
-    destination_path: /home/fuego/Projets/codewolf/
+    destination_path: /home/fuego/Projets/kodewolf/
     files:
       - cronos.conf
       - cronos-special.conf
@@ -38,13 +38,13 @@ deploy:
     host: codewolf.fr
     user: fuego
     commands:
-      - cd ~/Projets/codewolf
-      - docker pull creus.codewolf.fr:5000/codewolf/codewolf:$$BRANCH
+      - cd ~/Projets/kodewolf
+      - docker pull creus.codewolf.fr:5000/kodewolf/kodewolf:$$BRANCH
       - docker-compose -f docker-compose.cronos.yml up -d
-      - cp cronos.conf ~/Projets/frostfire/cronos/projects/codewolf.conf
-      - cp cronos-special.conf ~/Projets/frostfire/global-nginx/specials/codewolf.conf
+      - cp cronos.conf ~/Projets/frostfire/cronos/projects/kodewolf.conf
+      - cp cronos-special.conf ~/Projets/frostfire/global-nginx/specials/kodewolf.conf
       - cd ~/Projets/frostfire
-      - docker-compose -f docker-compose.admin.yaml run --rm letsencrypt generate.sh codewolf.fr
+      - docker-compose -f docker-compose.admin.yaml run --rm letsencrypt generate.sh kodewolf.com
       - docker-compose up -d --build
     when:
       branch: [master, develop]

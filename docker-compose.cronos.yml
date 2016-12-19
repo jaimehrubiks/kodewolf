@@ -1,7 +1,7 @@
 version: '2'
  
 services:
-  codewolf:
+  kodewolf:
     image: creus.codewolf.fr:5000/codewolf/codewolf:master
     networks:
       - cronos
