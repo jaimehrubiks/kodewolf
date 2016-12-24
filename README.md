@@ -2,7 +2,7 @@
 
 # Kodewolf
 
-[![Build Status](https://creus.codewolf.fr/api/badges/fuegowolf/codewolf/status.svg)](https://creus.codewolf.fr/fuegowolf/codewolf)
+[![Build Status](https://creus.fuegowolf.me/api/badges/fuegowolf/codewolf/status.svg)](https://creus.codewolf.fr/fuegowolf/codewolf)
 
 Kodewolf is here to provide a quality blog to describe my life and my machine learning/computers experiences. The main goal of this is to create a environnement to relax and learn paisibly what computers are capable of.
 

@@ -45,7 +45,7 @@ deploy:
       - cp cronos-special.conf ~/Projets/frostfire/global-nginx/specials/kodewolf.conf
       - cd ~/Projets/frostfire
       - docker-compose -f docker-compose.admin.yaml run --rm letsencrypt generate.sh kodewolf.com
-      - docker-compose up -d --build
+      - docker-compose up -d --build global-nginx cronos-nginx
     when:
       branch: [master, develop]
 
