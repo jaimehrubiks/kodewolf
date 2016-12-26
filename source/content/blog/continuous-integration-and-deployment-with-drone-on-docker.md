@@ -11,6 +11,8 @@ title = "Continuous Integration and Deployment with Drone on Docker"
 
 Hey ! Today we will see how to create a complete environment for Continuous integration and deployment with the CI tool [Drone](http://drone.io/) and [Docker](https://docker.com/).
 
+![Drone](./images/drone.jpg)
+
 # What is Continuous Integration and Deployment, and why use it ?
 
 I was first attracted by [Travis CI](https://travis-ci.com) because it was really linked to Github, and it was really popular in the devops world. **Travis CI** provides a Continuous Integration tool, that means that each time you **push** commits to your Github repository, it will trigger the creation of a Virtual Machine with your code, and then run **tests** on it. This is _Continuous Integration_.

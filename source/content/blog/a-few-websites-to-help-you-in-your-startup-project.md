@@ -9,7 +9,11 @@ tags = ["numerai", "machine learning", "stock market", "network"]
 title = "A few websites to help you in your startup project"
 +++
 
-Hi everybody ! I've started thinking about Christmas presents and I've decided to look for gear or books I might need if I launch my own startup. It is not something I plan on doing now but I'm confident that someday I will launch my own company. In order to experiment, I will be trying out some of the projects I came up with over the last 6 months next year. So I looked it up on Google and here are my favorites websites about startups :
+Hi everybody ! I've started thinking about Christmas presents and I've decided to look for gear or books I might need if I launch my own startup. It is not something I plan on doing now but I'm confident that someday I will launch my own company. 
+
+![Startup](./images/startup.jpg)
+
+In order to experiment, I will be trying out some of the projects I came up with over the last 6 months next year. So I looked it up on Google and here are my favorites websites about startups :
 
 # [Growth Supply](http://growth.supply/free/)
 
@@ -24,6 +28,8 @@ I used to go on [HTML5 Up!](https://html5up.net/) to find static website templat
 # [StartUp League](http://startupleague.online)
 
 As they say in the front page, StartUp League is a Radix initiative and aims at giving cool things to start ups. They offer you sales on conference tickets, t-shirts, and a domain name with a brand new suffix like *.tech*, *.space*, *.online* and so on. This website is cool to find new ideas for a project too and might be useful if you need tech services.
+
+![Forest](./images/forest.jpg)
 
 # [No Desk](http://nodesk.co/)
 
