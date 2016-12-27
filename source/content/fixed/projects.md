@@ -10,12 +10,31 @@ title = "Projects"
 
 +++
 
-Hey ! You can checkout my **projects** on GitHub here : [https://github.com/fuegowolf](https://github.com/fuegowolf) or on my own Git server : [https://helios.fuegowolf.me/fuego](https://helios.fuegowolf.me/fuego)! You will find every of them :
+Hey ! You can checkout my **projects** here : 
 
-* [**Kodewolf**](https://helios.fuegowolf.me/fuego/kodewolf), this blog.
-* [**Frostfire**](https://github.com/fuegowolf/frostfire), my online base. It is a stack with many features, all with Docker.
-* [**Chessto**](https://github.com/fuegowolf/chessto), a chess board with a powerful API, to control a chess game with computers and experiment a lot.
-* [**Lupus**](https://helios.fuegowolf.me/fuego/lupus-front-web), a game based on Werewolves designed for the Campus of Ecole Centrale Paris.
-* [**Amiral**](https://github.com/fuegowolf/amiral), my personnal companion. He is a bot that checkouts everything for me and keeps me up.
+* On _Github_ : [https://github.com/fuegowolf](https://github.com/fuegowolf) 
+* On _Helios_, my own Git server : [https://helios.fuegowolf.me/fuego](https://helios.fuegowolf.me/fuego)
+
+And you will find all of them here :
+
+[![Frostfire](/images/frostfire.png)](https://github.com/fuegowolf/frostfire)
+
+[**Frostfire**](https://github.com/fuegowolf/frostfire) is a Docker stack for people who wants a private server for their projects and entertainment. Frostfire contains a modular Nginx to host all kind of projects, a Graylog stack to monitor logs, a Telegraf/InfluxDB/Grafana stack to monitor metrics, a Continuous Deployment environment, a Taiga to manage projects, a Gogs git server to host private projects, a Deluge, a Pydio, and more.
+
+All is here to exploit the maximum of a private server : tools to develop personnal or team projects and host them, and personnal tools.
+
+[![Amiral](/images/amiral.png)](https://helios.fuegowolf.me/fuego/amiral)
+
+[**Amiral**](https://helios.fuegowolf.me/fuego/amiral) is a bot designed to help developpers in their day-to-day life. It alerts when a build is done, when something isn't right and will use Natural Language Processing to understand properly its master. It can also work in team, alerting everybody when a maintenance is scheluded or when somebody needs help.
+
+This project is **only at its beginning** so everything is not implemented yet, but I will work on it.
+
+[![Kodewolf](/images/kodewolf.png)](https://kodewolf.com)
+
+[**Kodewolf**](https://kodewolf.com) is this blog. It is where I describe my personnal experiences in coding, machine learning and others cool stuff I found on the net or I discussed with my friends.
+
+![Lupus](/images/lupus.png)
+
+**Lupus**, a game based on _The Werewolves of Miller's Hollow_ designed for the Campus of Ecole Centrale Paris. There is a simple website to present the game, sources at [this address](https://helios.fuegowolf.me/fuego/lupus-website) and a web app developped in ReactJS, available [here](https://helios.fuegowolf.me/fuego/lupus-front-web). The back has to be done and will be in Python with Flask.
 
 If you have any questions about them, don't hesitate, I would be happy to help :)
