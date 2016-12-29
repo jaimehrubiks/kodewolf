@@ -1,4 +1,4 @@
-baseurl = "https://kodewolf.com/"
+baseurl = "https://kodewolf.com"
 theme = "cocoa-eh-hugo-theme"
 builddrafts = true
 canonifyurls = true
