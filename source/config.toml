@@ -1,4 +1,4 @@
-baseurl = "https://kodewolf.com/"
+baseurl = "https://kodewolf.com"
 theme = "cocoa-eh-hugo-theme"
 builddrafts = true
 canonifyurls = true
@@ -21,7 +21,7 @@ author = "Alexis Tacnet"
 cachebuster = true
 dateform = "Jan 2, 2006"
 dateformfull = "Mon Jan 2 2006 15:04:05 MST"
-description = "A simple blog about my coder's life : coding, devops things and machine learning."
+description = "A simple blog about my coder's life : coding, devops things, machine learning and other experiences in technology."
 logofile = "images/logo.png"
 faviconfile = "images/logo.png"
 highlightjs = true
