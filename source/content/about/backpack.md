@@ -1,13 +1,7 @@
 +++
-author = "Alexis Tacnet"
-date = "2016-12-28T17:37:32Z"
-comments = true
-draft = false
-shares = false
-metas = false
-
+date = "2016-12-28"
 title = "My backpack"
-
+description = "A cover of my day-to-day backpack, with all my gear."
 +++
 
 Hi ! I love to travel a lot, and I never leave without my **backpack**, full of stuff I love to take with me on roads.

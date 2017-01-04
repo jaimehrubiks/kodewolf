@@ -1,12 +1,8 @@
 +++
-author = "Alexis Tacnet"
-comments = true
-date = "2016-12-18T23:19:32Z"
-draft = false
-featured = false
-share = true
+date = "2016-12-18"
 tags = ["numerai", "machine learning", "stock market", "network"]
 title = "A few websites to help you in your startup project"
+description = "A list of websites useful to launch a startup : Growth Supply, Template Stash, Startup league ..."
 +++
 
 Hi everybody ! I've started thinking about Christmas presents and I've decided to look for gear or books I might need if I launch my own startup. It is not something I plan on doing now but I'm confident that someday I will launch my own company. 
