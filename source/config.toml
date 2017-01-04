@@ -13,7 +13,6 @@ disqusshortname = "kodewolf"
 pluralizelisttitles = false
 
 [permalinks]
-fixed = ":title/"
 blog = "blog/:slug/"
 
 [params]
