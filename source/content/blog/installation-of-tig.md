@@ -1,12 +1,8 @@
 +++
-author = "Alexis Tacnet"
-comments = true
-date = "2016-10-15T23:19:32Z"
-draft = false
-featured = false
-share = true
+date = "2016-10-15"
 tags = ["docker", "telegraf", "influxdb", "grafana"]
 title = "Telegraf, InfluxDB and Grafana experience with Docker"
+description = "A complete tutorial to install a TIG stack."
 +++
 
 Hey welcome back ! Today we're installing Telegraf, InfluxDB and Grafana with Docker !

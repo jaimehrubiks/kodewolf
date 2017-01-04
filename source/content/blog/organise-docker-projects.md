@@ -1,12 +1,8 @@
 +++
-author = "Alexis Tacnet"
-comments = true
-date = "2016-07-31T17:37:32Z"
-draft = false
-featured = false
-share = true
+date = "2016-07-31"
 tags = ["docker", "projects"]
 title = "How to organize your docker project"
+description = "A small tutorial to organize small docker projects with docker compose."
 +++
 
 Hey you ! Today we are testing a new way to organize projects with docker !

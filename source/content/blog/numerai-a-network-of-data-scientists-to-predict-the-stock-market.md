@@ -1,12 +1,8 @@
 +++
-author = "Alexis Tacnet"
-comments = true
-date = "2016-12-26T23:19:32Z"
-draft = false
-featured = false
-share = true
+date = "2016-12-26"
 tags = ["numerai", "machine learning", "stock market", "network"]
 title = "Numerai : a network of data scientists to predict the stock market"
+description = "Numerai is a network of data scientists about the stock market."
 +++
 
 [**Numerai**](https://numer.ai) is a website about **Machine Learning**. Well, no surprises here, the topic is sky-rocketing in the IT world nowadays.

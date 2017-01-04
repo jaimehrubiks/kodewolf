@@ -8,17 +8,13 @@ layoutdir = "layouts"
 publishdir = "public"
 author = "Alexis Tacnet"
 title = "Kodewolf"
-pygmentsuseclasses = true
 disqusshortname = "kodewolf"
 pluralizelisttitles = false
 
 [permalinks]
-fixed = ":title/"
 blog = "blog/:slug/"
 
 [params]
-author = "Alexis Tacnet"
-cachebuster = true
 dateform = "Jan 2, 2006"
 dateformfull = "Mon Jan 2 2006 15:04:05 MST"
 description = "A simple blog about my coder's life : coding, devops things, machine learning and other experiences in technology."
