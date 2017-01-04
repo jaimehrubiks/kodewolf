@@ -9,6 +9,7 @@ publishdir = "public"
 author = "Alexis Tacnet"
 title = "Kodewolf"
 disqusshortname = "kodewolf"
+pluralizelisttitles = false
 
 [permalinks]
 blog = "blog/:slug/"
