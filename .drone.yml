@@ -6,7 +6,8 @@ clone:
 build:
   image: ubuntu:latest
   commands:
-    - apt-get update && apt-get install -y hugo
+    - apt-get update && apt-get install -y wget
+    - wget "https://github.com/spf13/hugo/releases/download/v0.18.1/hugo_0.18.1-64bit.deb" -O hugo_0.18.1-64bit.deb && dpkg -i hugo_0.18.1-64bit.deb
     - hugo --source="source" --buildDrafts
 
 publish:
