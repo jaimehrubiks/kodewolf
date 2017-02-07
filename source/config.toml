@@ -21,6 +21,7 @@ description = "A simple blog about my coder's life : coding, devops things, mach
 logofile = "images/logo.png"
 faviconfile = "images/logo.png"
 highlightjs = true
+progressively = true
 lang = "en"
 github = "fuegowolf"
 email = "alexistacnet@gmail.com"
