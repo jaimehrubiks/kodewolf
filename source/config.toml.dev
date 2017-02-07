@@ -1,0 +1,29 @@
+baseurl = "https://cronos.fuegowolf.me/kodewolf-dev/"
+theme = "cocoa-eh-hugo-theme"
+builddrafts = true
+canonifyurls = true
+contentdir = "content"
+languageCode = "en-US"
+layoutdir = "layouts"
+publishdir = "public"
+author = "Alexis Tacnet"
+title = "Kodewolf"
+disqusshortname = "kodewolf"
+pluralizelisttitles = false
+
+[permalinks]
+blog = "blog/:slug/"
+
+[params]
+dateform = "Jan 2, 2006"
+dateformfull = "Mon Jan 2 2006 15:04:05 MST"
+description = "Dev version of Kodewolf."
+logofile = "images/logo.png"
+faviconfile = "images/logo.png"
+highlightjs = true
+progressively = true
+lang = "en"
+github = "fuegowolf"
+email = "alexistacnet@gmail.com"
+linkedin = "alexis-tacnet-aa0478109"
+twitter = "fuegowolf"
