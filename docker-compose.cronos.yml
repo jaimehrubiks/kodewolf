@@ -7,6 +7,13 @@ services:
       - cronos
     restart: always
 
+  kodewolf-dev:
+    image: creus.fuegowolf.me:5000/kodewolf/kodewolf:develop
+    networks:
+      - cronos
+    restart: always
+
+
 networks:
   cronos:
     external: 
