@@ -22,6 +22,7 @@ logofile = "images/logo.png"
 faviconfile = "images/logo.png"
 highlightjs = true
 progressively = true
+latestpostcount = 5
 lang = "en"
 github = "fuegowolf"
 email = "alexistacnet@gmail.com"

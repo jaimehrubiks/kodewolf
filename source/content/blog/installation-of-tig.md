@@ -4,6 +4,7 @@ tags = ["docker", "telegraf", "influxdb", "grafana"]
 title = "Telegraf, InfluxDB and Grafana experience with Docker"
 description = "A complete tutorial to install a TIG stack."
 meta_img = "./images/high/grafana.png"
+best = true
 +++
 
 Hey welcome back ! Today we're installing Telegraf, InfluxDB and Grafana with Docker !
