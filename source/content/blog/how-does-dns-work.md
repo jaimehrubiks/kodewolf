@@ -3,7 +3,7 @@ date = "2017-02-07"
 tags = ["how", "dns"]
 title = "How does DNS work ?"
 description = "The DNS is the thing that allows humanity to use URL with words and not IPs, and this is how it works."
-meta_img = "./images/internet_use.jpg"
+meta_img = "./images/high/internet_use.jpg"
 +++
 
 If you have ever been curious about how the Internet is built, you might be familiar with the concept of DNS.  This protocol is really important for people because it makes them remember **words** and not IP addresses to access a website, with what we call a **domain name** (kodewolf.com for example). And today we will see how DNS works.
