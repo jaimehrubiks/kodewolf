@@ -3,6 +3,7 @@ date = "2016-12-28"
 tags = ["hardware", "rt3290", "ubuntu", "rtl8812au"]
 title = "The horrible rt3290 realtek chipset and ubuntu"
 description = "A story about my rt3290sta chipset and the mess it was to get it functionnal."
+meta_img = "./images/ampli.jpg"
 +++
 
 Hi ! As you can see in my [backpack](./backpack/), I've got quite an old laptop : a HP Probook 4540s. This old girl is perfect for me : 6GB of memory, a dual-core CPU, a 500GB hard drive, a good screen and plenty of ports. But there is one thing I forgot to check : the wireless chipset.
