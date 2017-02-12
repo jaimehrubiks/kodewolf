@@ -7,8 +7,6 @@ description = "The DNS is the thing that allows humanity to use URL with words a
 
 If you have ever been curious about how the Internet is built, you might be familiar with the concept of DNS.  This protocol is really important for people because it makes them remember **words** and not IP addresses to access a website, with what we call a **domain name** (kodewolf.com for example). And today we will see how DNS works.
 
-> Bite
-
 # Why is it called a "domain" name ?
 
 A bit of theory here. The term "domain" is well chosen because domain names have a pyramidal organization. Take this domain for example :
@@ -290,7 +288,7 @@ Hope that was useful to you ! Don't hesitate to contact me if you don't understa
 
 ## Final bonus
 
-The root domain has a blank domain name, a dns is in real like :
+The root domain has a blank domain name, a url is in reality :
 
     www.example.com..
 
