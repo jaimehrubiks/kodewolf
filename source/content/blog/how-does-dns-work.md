@@ -197,9 +197,10 @@ l.root-servers.net. 427955  IN  AAAA    2001:500:9f::42
 m.root-servers.net. 92741   IN  A   202.12.27.33
 m.root-servers.net. 493882  IN  AAAA    2001:dc3::35
 ```
-Yeah ! The `ADDITIONAL SECTION` is exactly what we wanted, this way we know the exact addresses of the servers. 
 
-This is really a core feature of the DNS protocol because without it it would be impossible to query the `root-servers.net` domain without itself ! This is why **every DNS has the root server list built in it.** 
+Yeah ! The `ADDITIONAL SECTION` is exactly what we wanted, this way we know the exact addresses of the servers. The IP addresses of the DNS are **glued** to the domain name itself : even if it looks like a domain, there is always a IP behind.
+
+This is really a core feature of the DNS protocol because without it it would be impossible to query the `root-servers.net` domain without itself (we need it to know the `.net` zone) ! This is why **every DNS has the root server list built in it in Glue records :** this way each time a new request is made, the DNS know where to ask, in term of IP address, without the need to ask someone else.
 
 ![library](./images/library.jpg)
 
@@ -223,6 +224,7 @@ com.            172800  IN  NS  i.gtld-servers.net.
 com.            172800  IN  NS  a.gtld-servers.net.
 ;; Received 862 bytes from 2001:500:2d::d#53(d.root-servers.net) in 105 ms
 ```
+
 So we asked a root server (the `d.root-servers.net)` one) the `.com` domain. Again, **Glue records** are here to provide IP addresses behind those domain names. You can check it with the `dig +norec h.gtld-servers.net NS` command.
 
 There are glue records here because we can't know the IP address of `h.gtld-servers.net` directly without asking to the DNS of `gtld-servers.net`, which is ... `h.gtld-servers.net` ... yeah. With a glue record, the parent server answers where to continue even if it's inside the subdomain.
