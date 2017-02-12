@@ -5,11 +5,13 @@ title = "How does DNS work ?"
 description = "The DNS is the thing that allows humanity to use URL with words and not IPs, and this is how it works."
 +++
 
-If you have ever be curious about how the Internet is built, you might be familiar with the concept of DNS.  This protocol is really important for people because it makes them remember **words** and not IP addresses to access a website, with what we call a **domain name** (kodewolf.com for example). And today we will see how DNS works.
+If you have ever been curious about how the Internet is built, you might be familiar with the concept of DNS.  This protocol is really important for people because it makes them remember **words** and not IP addresses to access a website, with what we call a **domain name** (kodewolf.com for example). And today we will see how DNS works.
+
+> Bite
 
 # Why is it called a "domain" name ?
 
-A bit of theory here. The term "domain" is well chosen because domain names have a pyramid organization. Take this domain for example :
+A bit of theory here. The term "domain" is well chosen because domain names have a pyramidal organization. Take this domain for example :
 
     www.example.com
 
@@ -23,9 +25,9 @@ The **root** domain that I mentionned might seem a bit obscure but it's only a b
 
 ![server](./images/server.jpg)
 
-So remember that DNS is a matter of **domain**, and this is why it is working. **Each domain know where to find the subdomains**. Let's go for more explanation now.
+So remember that DNS is a matter of **domain**, and that's why it works. **Each domain know where to find the subdomains**. Let's go for more explanation now.
 
-# What happen when I ask for a website ?
+# What happens when I ask for a website ?
 
 As I said, DNS is a matter of domain, so the DNS client we've got with the OS kernel will ask step by step, domain by domain, the website you ask. 
 
