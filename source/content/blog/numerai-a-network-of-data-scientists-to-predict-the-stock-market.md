@@ -3,6 +3,7 @@ date = "2016-12-26"
 tags = ["numerai", "machine learning", "stock market", "network"]
 title = "Numerai : a network of data scientists to predict the stock market"
 description = "Numerai is a network of data scientists about the stock market."
+meta_img = "./images/high/numerai.jpg"
 +++
 
 [**Numerai**](https://numer.ai) is a website about **Machine Learning**. Well, no surprises here, the topic is sky-rocketing in the IT world nowadays.

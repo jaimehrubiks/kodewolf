@@ -3,13 +3,15 @@ date = "2017-02-07"
 tags = ["how", "dns"]
 title = "How does DNS work ?"
 description = "The DNS is the thing that allows humanity to use URL with words and not IPs, and this is how it works."
+meta_img = "./images/high/internet_use.jpg"
+best = true
 +++
 
-If you have ever be curious about how the Internet is built, you might be familiar with the concept of DNS.  This protocol is really important for people because it makes them remember **words** and not IP addresses to access a website, with what we call a **domain name** (kodewolf.com for example). And today we will see how DNS works.
+If you have ever been curious about how the Internet is built, you might be familiar with the concept of DNS.  This protocol is really important for people because it makes them remember **words** and not IP addresses to access a website, with what we call a **domain name** (kodewolf.com for example). And today we will see how DNS works.
 
 # Why is it called a "domain" name ?
 
-A bit of theory here. The term "domain" is well chosen because domain names have a pyramid organization. Take this domain for example :
+A bit of theory here. The term "domain" is well chosen because domain names have a pyramidal organization. Take this domain for example :
 
     www.example.com
 
@@ -23,9 +25,9 @@ The **root** domain that I mentionned might seem a bit obscure but it's only a b
 
 ![server](./images/server.jpg)
 
-So remember that DNS is a matter of **domain**, and this is why it is working. **Each domain know where to find the subdomains**. Let's go for more explanation now.
+So remember that DNS is a matter of **domain**, and that's why it works. **Each domain know where to find the subdomains**. Let's go for more explanation now.
 
-# What happen when I ask for a website ?
+# What happens when I ask for a website ?
 
 As I said, DNS is a matter of domain, so the DNS client we've got with the OS kernel will ask step by step, domain by domain, the website you ask. 
 
@@ -197,9 +199,10 @@ l.root-servers.net. 427955  IN  AAAA    2001:500:9f::42
 m.root-servers.net. 92741   IN  A   202.12.27.33
 m.root-servers.net. 493882  IN  AAAA    2001:dc3::35
 ```
-Yeah ! The `ADDITIONAL SECTION` is exactly what we wanted, this way we know the exact addresses of the servers. 
 
-This is really a core feature of the DNS protocol because without it it would be impossible to query the `root-servers.net` domain without itself ! This is why **every DNS has the root server list built in it.** 
+Yeah ! The `ADDITIONAL SECTION` is exactly what we wanted, this way we know the exact addresses of the servers. The IP addresses of the DNS are **glued** to the domain name itself : even if it looks like a domain, there is always a IP behind.
+
+This is really a core feature of the DNS protocol because without it it would be impossible to query the `root-servers.net` domain without itself (we need it to know the `.net` zone) ! This is why **every DNS has the root server list built in it in Glue records :** this way each time a new request is made, the DNS know where to ask, in term of IP address, without the need to ask someone else.
 
 ![library](./images/library.jpg)
 
@@ -223,6 +226,7 @@ com.            172800  IN  NS  i.gtld-servers.net.
 com.            172800  IN  NS  a.gtld-servers.net.
 ;; Received 862 bytes from 2001:500:2d::d#53(d.root-servers.net) in 105 ms
 ```
+
 So we asked a root server (the `d.root-servers.net)` one) the `.com` domain. Again, **Glue records** are here to provide IP addresses behind those domain names. You can check it with the `dig +norec h.gtld-servers.net NS` command.
 
 There are glue records here because we can't know the IP address of `h.gtld-servers.net` directly without asking to the DNS of `gtld-servers.net`, which is ... `h.gtld-servers.net` ... yeah. With a glue record, the parent server answers where to continue even if it's inside the subdomain.
@@ -288,7 +292,7 @@ Hope that was useful to you ! Don't hesitate to contact me if you don't understa
 
 ## Final bonus
 
-The root domain has a blank domain name, a dns is in real like :
+The root domain has a blank domain name, a url is in reality :
 
     www.example.com..
 

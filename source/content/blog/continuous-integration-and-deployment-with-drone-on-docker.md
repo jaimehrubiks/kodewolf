@@ -3,6 +3,7 @@ date = "2016-12-07"
 tags = ["docker", "drone", "continous", "deployment", "integration"]
 title = "Continuous Integration and Deployment with Drone on Docker"
 description = "A complete tutorial to do Continuous Deployment with Docker and Drone."
+meta_img = "./images/high/drone.jpg"
 +++
 
 Hey ! Today we will see how to create a complete environment for Continuous integration and deployment with the CI tool [Drone](http://drone.io/) and [Docker](https://docker.com/).

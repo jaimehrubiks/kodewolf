@@ -3,6 +3,8 @@ date = "2016-10-15"
 tags = ["docker", "telegraf", "influxdb", "grafana"]
 title = "Telegraf, InfluxDB and Grafana experience with Docker"
 description = "A complete tutorial to install a TIG stack."
+meta_img = "./images/high/grafana.png"
+best = true
 +++
 
 Hey welcome back ! Today we're installing Telegraf, InfluxDB and Grafana with Docker !
@@ -22,7 +24,7 @@ However, it has been proved that the two last are only necessaries if you need a
 
 Grafana offers multiple possibilities like accounts, groups, multiple data sources if you're not only using InfluxDB, dashboards, plugins, and graphs that are very pleasants to make.
 
-![Grafana](/images/grafana.png)
+![Grafana](./images/grafana.png)
 
 So let's put up our **TIG** stack !
 
