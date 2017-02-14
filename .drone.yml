@@ -4,19 +4,15 @@ clone:
     source/themes/cocoa-eh-hugo-theme: https://github.com/fuegowolf/cocoa-eh-hugo-theme.git
 
 build:
-  image: ubuntu:latest
+  image: fuego/hugo:latest
   commands:
-    - apt-get update && apt-get install -y wget
-    - wget "https://github.com/spf13/hugo/releases/download/v0.18.1/hugo_0.18.1-64bit.deb" -O hugo_0.18.1-64bit.deb && dpkg -i hugo_0.18.1-64bit.deb
     - hugo --source="source" --buildDrafts
   when:
       branch: master
 
 build:
-  image: ubuntu:latest
+  image: fuego/hugo:latest
   commands:
-    - apt-get update && apt-get install -y wget
-    - wget "https://github.com/spf13/hugo/releases/download/v0.18.1/hugo_0.18.1-64bit.deb" -O hugo_0.18.1-64bit.deb && dpkg -i hugo_0.18.1-64bit.deb
     - cp ./source/config.toml.dev ./source/config.toml
     - hugo --source="source" --buildDrafts
   when:
