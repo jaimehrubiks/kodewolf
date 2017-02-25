@@ -3,12 +3,12 @@ date = "2016-12-07"
 tags = ["docker", "drone", "continous", "deployment", "integration"]
 title = "Continuous Integration and Deployment with Drone on Docker"
 description = "A complete tutorial to do Continuous Deployment with Docker and Drone."
-meta_img = "./images/high/drone.jpg"
+meta_img = "/images/high/drone.jpg"
 +++
 
 Hey ! Today we will see how to create a complete environment for Continuous integration and deployment with the CI tool [Drone](http://drone.io/) and [Docker](https://docker.com/).
 
-![Drone](./images/drone.jpg)
+![Drone](/images/drone.jpg)
 
 # What is Continuous Integration and Deployment, and why use it ?
 
@@ -45,7 +45,7 @@ So, there is a service on my server with two containers : Drone (because there i
 	      - /var/lib/drone
 	      - /var/run/docker.sock:/var/run/docker.sock
 	    env_file:
-	      - ./.env-drone
+	      - /.env-drone
 	    restart: always
 
 	## Docker registry
@@ -53,7 +53,7 @@ So, there is a service on my server with two containers : Drone (because there i
 	    image: registry:2
 	    volumes:
 	      - letsencrypt-certs:/certs
-	      - ./htpasswd:/htpasswd
+	      - /htpasswd:/htpasswd
 	    environment:
 	      - REGISTRY_HTTP_TLS_CERTIFICATE=/certs/live/???/fullchain.pem
 	      - REGISTRY_HTTP_TLS_KEY=/certs/live/???/privkey.pem

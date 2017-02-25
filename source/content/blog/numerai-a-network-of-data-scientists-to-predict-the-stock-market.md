@@ -3,12 +3,12 @@ date = "2016-12-26"
 tags = ["numerai", "machine learning", "stock market", "network"]
 title = "Numerai : a network of data scientists to predict the stock market"
 description = "Numerai is a network of data scientists about the stock market."
-meta_img = "./images/high/numerai.jpg"
+meta_img = "/images/high/numerai.jpg"
 +++
 
 [**Numerai**](https://numer.ai) is a website about **Machine Learning**. Well, no surprises here, the topic is sky-rocketing in the IT world nowadays.
 
-[![Numerai](./images/numerai.jpg)](https://numer.ai/) 
+[![Numerai](/images/numerai.jpg)](https://numer.ai/) 
 
 But here, it is about the **Stock Market**, a dream for a lot of data scientists : many features, predictions that matter (the more accurate you predict, the more money you earn) and, without hiding ourselves, being able to tell your step-parents when they ask about your job _Well I'm predicting the stock market you know_.
 
@@ -26,7 +26,7 @@ Nothing else was needed to launch **Numerai**, a place where the best data scien
 
 Stacking is about having a _meta model_ which takes in input everybody's predictions and gives them a weight according to the improvement they bring to the global model. For example, if I submit a model that is, in a good way, radically different from others, I may improve Numerai's model a lot.
 
-![Meta_model](./images/numerai_meta_model.jpg)
+![Meta_model](/images/numerai_meta_model.jpg)
 
 # Why predict the stock market ?
 

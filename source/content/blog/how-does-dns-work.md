@@ -3,7 +3,7 @@ date = "2017-02-07"
 tags = ["how", "dns"]
 title = "How does DNS work ?"
 description = "The DNS is the thing that allows humanity to use URL with words and not IPs, and this is how it works."
-meta_img = "./images/high/internet_use.jpg"
+meta_img = "/images/high/internet_use.jpg"
 best = true
 +++
 
@@ -23,7 +23,7 @@ There are here three levels and each is similar to a domain :
 
 The **root** domain that I mentionned might seem a bit obscure but it's only a blank domain which redirects its child to the authoritative server corresponding. This domain is powered by [13 root servers](https://en.wikipedia.org/wiki/Root_name_server) which are possessed by multiple internet operators in different countries. For example, they ensure that the *.com* redirects to the *gtld-servers.net* server family.
 
-![server](./images/server.jpg)
+![server](/images/server.jpg)
 
 So remember that DNS is a matter of **domain**, and that's why it works. **Each domain know where to find the subdomains**. Let's go for more explanation now.
 
@@ -204,7 +204,7 @@ Yeah ! The `ADDITIONAL SECTION` is exactly what we wanted, this way we know the 
 
 This is really a core feature of the DNS protocol because without it it would be impossible to query the `root-servers.net` domain without itself (we need it to know the `.net` zone) ! This is why **every DNS has the root server list built in it in Glue records :** this way each time a new request is made, the DNS know where to ask, in term of IP address, without the need to ask someone else.
 
-![library](./images/library.jpg)
+![library](/images/library.jpg)
 
 However every server doesn't have every glue record built in, but only the ones that are useful to find a sub-domain, like we will see in the next answer, the `.com` part. 
 
@@ -256,7 +256,7 @@ google.com.     300 IN  A   216.58.213.174
 
 The DNS adventure we just saw is a little biased in fact. It would be very hard to load each domain this way, mainly because of the charge that would imply for famous DNS like the root servers for example.
 
-![internet_use](./images/internet_use.jpg)
+![internet_use](/images/internet_use.jpg)
 
 In order to fix this, the better solution is **caching**. This is why Internet browsers are caching the DNS response, and even sometimes the OS itself. But the charge would still be too huge for the poor 30-year-old root servers, so there is a need to cache for multiple users.
 
