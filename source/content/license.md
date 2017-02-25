@@ -1,3 +1,7 @@
++++
+title = "License"
++++
+
 The MIT License (MIT)
 =====================
 
