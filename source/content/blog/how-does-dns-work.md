@@ -23,7 +23,7 @@ There are here three levels and each is similar to a domain :
 
 The **root** domain that I mentionned might seem a bit obscure but it's only a blank domain which redirects its child to the authoritative server corresponding. This domain is powered by [13 root servers](https://en.wikipedia.org/wiki/Root_name_server) which are possessed by multiple internet operators in different countries. For example, they ensure that the *.com* redirects to the *gtld-servers.net* server family.
 
-![server](../../images/server.jpg)
+![server](/images/server.jpg)
 
 So remember that DNS is a matter of **domain**, and that's why it works. **Each domain know where to find the subdomains**. Let's go for more explanation now.
 
