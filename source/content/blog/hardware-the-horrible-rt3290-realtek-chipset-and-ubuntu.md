@@ -3,12 +3,12 @@ date = "2016-12-28"
 tags = ["hardware", "rt3290", "ubuntu", "rtl8812au"]
 title = "The horrible rt3290 realtek chipset and ubuntu"
 description = "A story about my rt3290sta chipset and the mess it was to get it functionnal."
-meta_img = "../../images/high/ampli.jpg"
+meta_img = "/images/high/ampli.jpg"
 +++
 
 Hi ! As you can see in my [backpack](/backpack/), I've got quite an old laptop : a HP Probook 4540s. This old girl is perfect for me : 6GB of memory, a dual-core CPU, a 500GB hard drive, a good screen and plenty of ports. But there is one thing I forgot to check : the wireless chipset.
 
-![Old amplifier](../../images/ampli.jpg)
+![Old amplifier](/images/ampli.jpg)
 
 # The Realtek RT3290
 
@@ -28,11 +28,11 @@ So I decided to replace the 3290 realtek chipset of my laptop by a Intel one, bu
 
 As the doc says, the driver module of the `rtl8812au` is not in the kernel, but someone compiled it from sources and it seems to work. It's also working with my laptop, and I'm very happy with it. Here is a small comparaison of speedtest :
 
-![rt3290](../../images/rt3290.png)
+![rt3290](/images/rt3290.png)
 
 Above, with the `rt3290`, and below with the `rt8812au` in my D-Link DWA-171.
 
-![rtl8812au](../../images/rtl8812au.png)
+![rtl8812au](/images/rtl8812au.png)
 
 And there is no more interruptions in my connection, whenever I reboot the module is always working. No more problems ! If you've got questions, I will be happy to answer them :)
 
