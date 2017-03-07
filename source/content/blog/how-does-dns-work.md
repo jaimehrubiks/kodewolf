@@ -3,7 +3,7 @@ date = "2017-02-07"
 tags = ["how", "dns"]
 title = "How does DNS work ?"
 description = "The DNS is the thing that allows humanity to use URL with words and not IPs, and this is how it works."
-meta_img = "/images/high/internet_use.jpg"
+meta_img = "/images/internet_use.jpg"
 best = true
 +++
 
