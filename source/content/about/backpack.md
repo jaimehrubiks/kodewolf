@@ -7,13 +7,13 @@ meta_img = "../../images/aventure.jpg"
 
 Hi ! I love to travel a lot, and I never leave without my **backpack**, full of stuff I love to take with me on roads.
 
-![Aventure](../../images/aventure.jpg)
+![Aventure](/images/aventure.jpg)
 
 This is a list about everything I take with me : tech gear, books, ... I will complete it when I found something !
 
 # The day-to-day backpack
 
-![Stuff](../../images/stuff.png)
+![Stuff](/images/stuff.png)
 
 For my personnal and professional use, I need _must-have_ stuff like :
 
