@@ -30,3 +30,4 @@ linkedin = "alexis-tacnet-aa0478109"
 twitter = "fuegowolf"
 social_banner = "images/banner.png"
 copyright = "Copyright © 2016, 2017 Alexis Tacnet"
+extracssfiles = ["css/colors.css"]
