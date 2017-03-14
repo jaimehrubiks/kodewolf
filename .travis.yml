@@ -1,0 +1,17 @@
+sudo: required
+
+language: go
+
+services:
+  - docker
+
+install: go get -v github.com/spf13/hugo
+
+script:
+  - if [[ $TRAVIS_BRANCH == 'develop' ]]; then
+    cp ./source/config.toml.dev ./source/config.toml;
+    fi
+  - hugo --source="source" --buildDrafts
+  - docker build -t kodewolf/kodewolf:$TRAVIS_BRANCH .
+  - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD" cronos.fuegowolf.me:5000
+  - docker push kodewolf/kodewolf:$TRAVIS_BRANCH
