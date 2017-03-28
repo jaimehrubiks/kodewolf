@@ -2,34 +2,34 @@
 date = "2017-03-28"
 tags = ["dns", "privacy"]
 title = "Is there any privacy with the DNS protocol ?"
-description = ""
-meta_img = "/images/old_lock.jpg"
+description = "With the recent approval of the US Senate on the subject of Internet privacy, here is why you should use a VPN and choose wisely your DNS server."
+meta_img = "/images/privacy.jpg"
 best = false
 +++
 
-On March 23 of this year, the Senate of the United States of America voted in favor of the repeal of Internet privacy rules which were instaured by Obama during his presidency. If the bill passes, biggest ISPs from America will be free to gather data from users' traffic and then use it, in a commercial way or not.
+On March 23rd of this year, the Senate of the United States of America voted in favor of the repeal of Internet privacy rules instaured by Obama during his presidency. If the bill passes, biggest ISPs from America will be free to gather data from users' traffic and then use it, in a commercial way or not.
 
 Let's be clear here, I'm not a big defender of privacy, but that looks a bit 'not cool'. However, we are developpers and computer engineers, we know how those things work and how to defend ourselves.
 
 > I use HTTPS and a VPN, what could go wrong ?
 
-In fact, those tools are not covering 100% of the data you may transmit, and today we're gonna talk about the privacy in the DNS protocol.
+Actually, those tools are not covering 100% of the data you may transmit, and today we're gonna talk about the privacy in the DNS protocol.
 
 # The privacy between you and your DNS server
 
-We've [previously saw](/blog/the-security-of-the-dns-protocol/) that the DNS protocol is not really secured, and that everybody that was in the middle of your connection, like your favorite Internet provider, could see with or without HTTPS your DNS query.
+We've [previously saw](/blog/the-security-of-the-dns-protocol/) that the DNS protocol is not really secured, and that everybody who was in the middle of your connection, like your favorite Internet provider, could see your DNS queries, with or without HTTPS.
 
-That is the first big issue in the DNS protocol : the websites you are visiting are no longer private if you **only** use HTTPS without a VPN.
+This is the first big issue in the DNS protocol : the websites you are visiting are no longer private if you **only** use HTTPS without a VPN.
 
 ## A VPN could save you on this
 
-If you remember my previous article, I was saying that if someone was spoofing a Domain Name Server in your area, he could send you a wrong and risky IP to compromise your personnal data for example. A **VPN** is a good solution to this, and it's protecting your privacy from the firewall of your ISP too.
+If you remember my previous article, I was saying that if someone was spoofing a DNS server in your area, he could send you a wrong and risky IP to compromise your personnal data for example. A **VPN** is a good solution to avoid this, and it's protecting your privacy from the firewall of your ISP too.
 
-With a VPN, your DNS query will be secured to the VPN server and then a normal query will be done. This way, your ISP doesn't know what your browsing, and the VPN ISP doesn't know that it is you because it only sees the VPN IP address : you have **anonymity**.
+With a VPN, your DNS query will be secured to the VPN server and then a normal query will be done. This way, your ISP doesn't know what your browsing, and the VPN's ISP doesn't know it is you because it only sees the VPN IP address : you have **anonymity**.
 
 ## Practice
 
-So let's a bit what it looks like in practice. I have two machines : one which is the VPN server, and another that is the VPN client. I've set up all of this with an OpenVPN docker image and it's working like a charm.
+So let's see what it looks like in practice. I have two machines : one which is the VPN server, and another which is the VPN client. I've set up all of this with an OpenVPN docker image and it's working like a charm.
 
 I've got the firewall between those two machines too, and here is what I see when I do a `dig ifconfig.co` on my OpenVPN client :
 
@@ -50,7 +50,7 @@ listening on ens3, link-type EN10MB (Ethernet), capture size 262144 bytes
 12:15:26.460177 IP 192.168.1.100.39684 > google-public-dns-a.google.com.domain: 22149+ [1au] A? ifconfig.co. (40)
 ```
 
-Just after having decrypted the DNS query, the VPN server just executes it, and then answer my client in a encrypted way : **the DNS request is private**.
+Just after having decrypted the DNS query, the VPN server just executes it, and then answers my client in a encrypted way : **the DNS request is private**.
 
 ## Verify that your DNS query is going through your VPN
 
@@ -107,6 +107,6 @@ If you don't trust your ISP, you should change your DNS for one provided by a tr
 
 # Conclusion
 
-The DNS protocol is not something really secure, and so not really private. Besides some solutions are availables to protect you from your ISP that wants to sell your personnal data like your browsing history. Play safe, use a VPN !
+The DNS protocol is not something really secure, and so not really private either. However some solutions are availables to protect you from your ISP that wants to sell your personnal data like your browsing history. Play safe, use a VPN !
 
 See ya !

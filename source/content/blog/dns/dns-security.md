@@ -9,7 +9,7 @@ best = false
 
 Hi ! Today we're gonna see the **security** aspect of the DNS protocol. If you're interested in web, you should be used to the following statement :
 
-> "HTTPS everywhere ! We need to secure the web'
+> "HTTPS everywhere ! We need to secure the web"
 
 That's right, but is really HTTPS securing *everything* on Internet ? Let's see that.
 
