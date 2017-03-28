@@ -9,7 +9,7 @@ best = false
 
 Hi ! Today we're gonna see the **security** aspect of the DNS protocol. If you're interested in web, you should be used to the following statement :
 
-> "HTTPS everywhere ! We need to secure the web'
+> "HTTPS everywhere ! We need to secure the web"
 
 That's right, but is really HTTPS securing *everything* on Internet ? Let's see that.
 
@@ -27,7 +27,7 @@ The other aspect of the HTTPS for the end user is that you know that you can tru
 
 ## Why DNS has no security
 
-In fact, if an end user needs an Certificate Authority that validates a domain name, it is because a malicious Domain Name Server could indicate a wrong server for `facebook.com`. This way, even if the false Facebook has HTTPS enabled, its certificate will not be approuved and your browser will reject it.
+In fact, if an end user needs an Certificate Authority that validates a domain name, it is because a malicious DNS Server could indicate a wrong server for `facebook.com`. This way, even if the false Facebook has HTTPS enabled, its certificate will not be approuved and your browser will reject it.
 
 > A malicious DNS ? How that is possible ?
 
