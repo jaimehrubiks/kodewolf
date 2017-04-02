@@ -3,7 +3,7 @@ date = "2017-04-02"
 tags = ["wifi", "physics", "freefem"]
 title = "Simulation of the wifi propagation in a flat"
 description = "My school wanted my to do a small project with partial derivative equations, so I did a simulation of a wifi signal in a flat with the software Freefem++, an framework based on C++."
-meta_img = "/images/wifi.jpg"
+meta_img = "/images/wifi-propagation/point1.png"
 best = false
 +++
 
