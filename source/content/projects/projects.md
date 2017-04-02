@@ -8,7 +8,5 @@ metas = false
 title = "Projects"
 +++
 
-Hey ! You can checkout my **projects** here : 
+Hey ! You can checkout my **projects** on _Github_ : [https://github.com/fuegowolf](https://github.com/fuegowolf).
 
-* On _Github_ : [https://github.com/fuegowolf](https://github.com/fuegowolf) 
-* On _Helios_, my own Git server : [https://helios.fuegowolf.me/fuego](https://helios.fuegowolf.me/fuego)
