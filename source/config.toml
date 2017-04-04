@@ -30,4 +30,3 @@ twitter = "fuegowolf"
 social_banner = "images/banner.png"
 copyright = "Copyright © 2016, 2017 Alexis Tacnet"
 extracssfiles = ["css/colors.css"]
-googleanalytics = "UA-96626845-1"
