@@ -24,19 +24,19 @@ That seems a little bit crazy I know, but we were really enthusiastic about it. 
 
 I've thought that it didn't matter, and that all I needed was to modify the **objective function** in order to work it out, but I was wrong.
 
-Neural networks are not magic at all, they adapt their score with a **gradient** that makes them go in a better direction. Here the end of the pipeline and the pizza in input were not related at all by *linear functions*, so our neural network didn't really know where to go.
+Neural networks are not magic at all, they adapt their score with a **gradient** that makes them go in a better direction. Here the end of the pipeline and the pizza in input were not related by any *linear function* at all, so our neural network didn't really know where to improve.
 
-The point of having another neural network after (that is trained by the way) is to complete the linear pipeline as well and allow a gradient to be generated and then applied.
+The point of having another neural network (that is trained by the way) at the end is to complete the linear pipeline i.e allow a gradient to be generated and then applied.
 
 # Algorithm to the rescue
 
 After having learn from our first attempt, we were ready to go back to normal algorithm with a good old **Branch and bound**.
 
-And it worked quite nicely in fact, the branch and bound is a strong algorithm that always give a good solution at first, and then with time always better and better solutions.
+And it worked quite nicely in fact, the branch and bound is a strong algorithm that always gives you a good solution at first, and will with time improve its best solution.
 
-With a clever score or two, you can make the branch and bound refute a good amount of solution at the start of the branch and improve its speed by far.
+With a clever score or two, you can make the branch and bound refute a good amount of solutions at the beginning of a branch and improve its speed by far.
 
-However, when the pizza began to be really huge, the branch and bound was overwhelmed and never gave a good solution because there was too many at the same level.
+However, when the pizza began to be really huge, the branch and bound was overwhelmed and never gave a really good solution because the depth was too big.
 
 # Split everything !
 
@@ -44,6 +44,6 @@ Yeah I know the goal of the practice problem was to make *slices*, but with a sl
 
 # Conclusion
 
-In fact, we've **more learned** from the practice than from the real competition. We did a branch and bound but never really managed to do parallelism at all, so it was really slow. Maybe we know understand that we should have done a faster code that gives at least solutions instead of a perfect algorithm that gives us none at all.
+In fact, we've **more learned** from the practice than from the real competition. We did a branch and bound but never really managed to do parallelism at all, so it was really slow. Maybe we now understand that we should have done a faster code that gives at least solutions instead of a perfect algorithm that gives us none at all.
 
 Hope you enjoyed this competition like I did with my friends, and if you didn't participate you know what to do next year ! See ya !
