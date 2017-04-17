@@ -1,5 +1,5 @@
 +++
-date = "2017-04-09"
+date = "2017-04-17"
 tags = ["hash code", "machine learning"]
 title = "Google Hash Code 2017 : our attempt"
 description = "For the first time I've decided to participate to the Google Hash Code with some other friends, and this is what we've learned from this competition."
