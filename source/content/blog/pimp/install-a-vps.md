@@ -3,7 +3,7 @@ date = "2017-04-30"
 tags = ["pimp your devops life", "vps"]
 title = "Pimp your devops life : Install a VPS"
 description = "A new serie is starting : Pimp your devops life, and today we're gonna install the must have of every coder on this planet : a VPS."
-meta_img = "/images/vps.jpg"
+meta_img = "/images/pimp/vps.jpg"
 +++
 
 Hi ! Today I'm starting a new blog serie, named **Pimp your devops life** : those articles aim to improve your day to day coder life on various subjects, showing you what you can do better and how to do it.
