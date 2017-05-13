@@ -1,5 +1,5 @@
 +++
-date = "2017-05-09"
+date = "2017-05-13"
 tags = ["pimp your devops life", "vpn"]
 title = "Pimp your devops life : Install a VPN"
 description = "Today on Pimp your devops life, we're gonna learn how to install a personnal VPN on our VPS, to keep our Internet safe, private, and create a link between every computer."
@@ -10,11 +10,11 @@ A **VPN** is a must have for an hitchhiker of the Internet world. As I previousl
 
 ![vpn](/images/pimp/vpn.jpg)
 
-In the not so uncommon case where you're connected to a public wifi somewhere, the local Internet provider (the restaurant for example) could see every *DNS* query you make and the IP addresses you're communicating with. If the planets are aligned and they're in fact working for the Russia : you might be in front of an imminent danger.
+In the not so uncommon case where you're connected to a public wifi somewhere, the local Internet provider (the restaurant for example) could see every *DNS* query you make and the IP addresses you're communicating with. If the planets are aligned and they're in fact working for the Russians : you might be in front of an imminent danger.
 
 > But how can I protect myself from this vicious restaurant where the fries were so floppy ?
 
-I feel a duty to teach you how to defend yourself : today we are gonna install a VPN on your freshly [VPS](https://kodewolf.com/blog/pimp-your-devops-life--install-a-vps/).
+I feel the duty to teach you how to defend yourself : today we are gonna install a VPN on your freshly [VPS](https://kodewolf.com/blog/pimp-your-devops-life--install-a-vps/).
 
 # Why a VPN ?
 
